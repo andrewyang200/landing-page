@@ -159,26 +159,30 @@ section {
   margin: 2rem auto 0;
   max-width: 750px; /* Adjust as needed */
   border-radius: 8px;
-  overflow: hidden; /* If using background image */
+  overflow: hidden; /* Clip if needed, though SVG might scale */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa; /* Light background for the container */
+  padding: 1rem; /* Add some padding around the SVG */
 }
-.hero-visual img {
-  /* Basic styling for placeholder */
-  background-color: #e0e0e0; /* Placeholder color */
-  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover the area */
-  width: 100%;
-  height: auto;
+
+/* --- NEW/UPDATED RULE for SVG --- */
+.hero-visual svg {
+  display: block; /* Removes potential extra space below */
+  width: 100%;    /* Makes SVG fill container width */
+  height: auto;   /* Maintains aspect ratio */
+  max-width: 100%; /* Ensures it doesn't overflow container */
 }
+/* --- END NEW/UPDATED RULE --- */
+
 .hero-visual .visual-caption {
   font-size: 0.9rem;
   color: var(--text-light);
-  margin-top: 0.5rem;
+  margin-top: 1rem; /* Increased margin top */
   font-style: italic;
 }
 
 
-/* Problem/Solution Section */
+/* Problem / Solution Section */
 .problem-solution {
   text-align: center;
 }
