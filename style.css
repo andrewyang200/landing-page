@@ -1,0 +1,344 @@
+/* Basic Reset & Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #4F46E5; /* Indigo */
+  --secondary-color: #10B981; /* Emerald */
+  --dark-color: #111827; /* Gray 900 */
+  --light-color: #F9FAFB; /* Gray 50 */
+  --text-color: #374151; /* Gray 700 */
+  --text-light: #6B7280; /* Gray 500 */
+  --white-color: #FFFFFF;
+  --border-color: #E5E7EB; /* Gray 200 */
+  --font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+h1, h2, h3 {
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+h1 { font-size: 2.8rem; font-weight: 700; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.4rem; }
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.small-container {
+  max-width: 800px;
+}
+
+.bg-light {
+  background-color: var(--light-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.bg-dark h2, .bg-dark p {
+  color: var(--white-color);
+}
+
+section {
+  padding: 60px 0;
+}
+
+/* Buttons */
+.cta-button {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.cta-button-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.cta-button-primary:hover {
+  background-color: #4338CA; /* Darker Indigo */
+  transform: translateY(-2px);
+}
+
+.cta-button-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.cta-button-secondary:hover {
+  background-color: #EEF2FF; /* Light Indigo bg */
+}
+
+/* Header */
+.header {
+  background-color: var(--white-color);
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 0 40px; /* More top padding */
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+}
+
+.hero .subtitle {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: var(--text-light);
+}
+
+.hero-cta {
+  margin-bottom: 3rem;
+}
+
+.hero-visual {
+  margin: 2rem auto 0;
+  max-width: 750px; /* Adjust as needed */
+  border-radius: 8px;
+  overflow: hidden; /* If using background image */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.hero-visual img {
+  /* Basic styling for placeholder */
+  background-color: #e0e0e0; /* Placeholder color */
+  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area */
+  width: 100%;
+  height: auto;
+}
+.hero-visual .visual-caption {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+
+/* Problem/Solution Section */
+.problem-solution {
+  text-align: center;
+}
+.solution-heading {
+  margin-top: 2rem;
+  color: var(--primary-color);
+}
+
+/* How It Works Section */
+.how-it-works {
+  text-align: center;
+}
+.how-it-works h2 {
+  margin-bottom: 3rem;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+.step-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.step h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Features Section */
+.features h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.feature-item {
+  background-color: var(--white-color);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+.feature-icon {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  display: inline-block; /* Or flex align */
+}
+.feature-item h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Technology Section */
+.technology {
+  text-align: center;
+}
+
+/* Final CTA Section */
+.cta-final {
+  text-align: center;
+}
+.waitlist-form {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+.waitlist-form input[type="email"] {
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem;
+  min-width: 300px; /* Adjust as needed */
+  flex-grow: 1; /* Allow input to grow */
+}
+.waitlist-form button {
+  flex-shrink: 0; /* Prevent button from shrinking */
+}
+.form-message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  min-height: 1.2em; /* Reserve space for message */
+}
+.form-message.success {
+  color: var(--secondary-color);
+}
+.form-message.error {
+  color: #EF4444; /* Red */
+}
+
+
+/* Footer */
+.footer {
+  background-color: var(--light-color);
+  color: var(--text-light);
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap on small screens */
+  gap: 10px;
+}
+.footer-nav a {
+  color: var(--text-light);
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+.footer-nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+
+  .header .container {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .header .cta-button-secondary {
+      margin-top: 10px;
+  }
+
+  .hero { padding: 60px 0 30px; }
+  .hero .subtitle { font-size: 1rem; }
+
+  .steps, .feature-grid {
+      grid-template-columns: 1fr; /* Stack elements */
+  }
+
+  .waitlist-form {
+      flex-direction: column;
+      align-items: stretch; /* Make input/button full width */
+  }
+  .waitlist-form input[type="email"] {
+      min-width: unset;
+      width: 100%;
+  }
+
+  .footer .container {
+      flex-direction: column;
+      gap: 15px;
+  }
+  .footer-nav {
+      margin-top: 10px;
+  }
+  .footer-nav a {
+      margin: 0 8px;
+  }
+}
