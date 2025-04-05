@@ -3,35 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus AI Search - The Future of Professional Networking</title>
+    <title>Nexus AI Search - Professional Search. Reimagined.</title> <!-- Updated Title -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome for Icons -->
+    <!-- Font Awesome is less "Apple", consider replacing with custom icons or inline SVGs later if desired -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> <!-- Added 800 weight -->
 </head>
 <body>
 
-    <!-- Header / Navigation (Simple) -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">Nexus AI Search</div>
-            <nav>
-                <!-- Add nav links if needed later -->
-            </nav>
-            <a href="#waitlist" class="cta-button cta-button-secondary">Join Waitlist</a>
+    <!-- Simple Header -->
+    <header class="header-apple">
+        <div class="container-apple header-container-apple">
+            <div class="logo-apple">Nexus AI</div>
+            <a href="#waitlist" class="cta-link-apple">Join Waitlist</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Meet Your Next Connection. Just Ask.</h1>
-            <p class="subtitle">Experience groundbreaking AI-powered professional search that understands you. Upload your résumé once, unlock unparalleled semantic precision, and find exactly who you need—instantly.</p>
-            <div class="hero-cta">
-                <a href="#waitlist" class="cta-button cta-button-primary">Get Early Access</a>
+    <section class="hero-apple">
+        <div class="container-apple">
+            <h1 class="hero-headline-apple">Find anyone.<br>Just ask.</h1>
+            <p class="hero-subheadline-apple">Introducing Nexus AI Search. Upload your résumé, then use natural language to discover professional connections with unparalleled precision.</p>
+            <div class="hero-cta-apple">
+                <a href="#waitlist" class="cta-button-apple cta-button-primary-apple">Get Early Access</a>
             </div>
-            <div class="hero-visual">
+            <div class="hero-visual-apple">
                 <!-- SVG Hero Image -->
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
@@ -42,216 +40,136 @@
                       <stop offset="100%" stop-color="#ebf4ff" stop-opacity="0.5"/>
                     </linearGradient>
                     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stop-color="#3465ff" stop-opacity="0.8"/>
-                      <stop offset="100%" stop-color="#6c63ff" stop-opacity="0.8"/>
+                      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.9"/> <!-- Using primary color -->
+                      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.9"/> <!-- Lighter primary color -->
                     </linearGradient>
                     <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stop-color="#00e0c6" stop-opacity="0.8"/>
-                      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0.8"/>
+                      <stop offset="0%" stop-color="#10B981" stop-opacity="0.9"/> <!-- Using secondary color -->
+                      <stop offset="100%" stop-color="#34D399" stop-opacity="0.9"/> <!-- Lighter secondary color -->
                     </linearGradient>
                   </defs>
-
                   <!-- Background shape -->
                   <rect x="50" y="50" width="700" height="500" rx="20" fill="url(#grad1)" />
-
                   <!-- Resume document -->
                   <rect x="100" y="150" width="250" height="300" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
-                  <rect x="120" y="180" width="210" height="20" rx="4" fill="#e2e8f0"/>
-                  <rect x="120" y="220" width="180" height="15" rx="4" fill="#e2e8f0"/>
-                  <rect x="120" y="245" width="210" height="15" rx="4" fill="#e2e8f0"/>
-                  <rect x="120" y="270" width="160" height="15" rx="4" fill="#e2e8f0"/>
-                  <rect x="120" y="310" width="210" height="15" rx="4" fill="#e2e8f0"/>
-                  <rect x="120" y="335" width="180" height="15" rx="4" fill="#e2e8f0"/>
-                  <rect x="120" y="360" width="200" height="15" rx="4" fill="#e2e8f0"/>
-                  <rect x="120" y="400" width="120" height="15" rx="4" fill="#e2e8f0"/>
-                  <rect x="120" y="425" width="150" height="15" rx="4" fill="#e2e8f0"/>
-
+                  <rect x="120" y="180" width="210" height="20" rx="4" fill="#e2e8f0"/> <rect x="120" y="220" width="180" height="15" rx="4" fill="#e2e8f0"/> <rect x="120" y="245" width="210" height="15" rx="4" fill="#e2e8f0"/> <rect x="120" y="270" width="160" height="15" rx="4" fill="#e2e8f0"/> <rect x="120" y="310" width="210" height="15" rx="4" fill="#e2e8f0"/> <rect x="120" y="335" width="180" height="15" rx="4" fill="#e2e8f0"/> <rect x="120" y="360" width="200" height="15" rx="4" fill="#e2e8f0"/> <rect x="120" y="400" width="120" height="15" rx="4" fill="#e2e8f0"/> <rect x="120" y="425" width="150" height="15" rx="4" fill="#e2e8f0"/>
                   <!-- AI processing arrows and lines -->
-                  <path d="M360 250 C420 250, 420 250, 440 300" stroke="#3465ff" stroke-width="3" fill="none" stroke-dasharray="8,4"/>
-                  <path d="M360 320 C420 320, 420 350, 440 350" stroke="#3465ff" stroke-width="3" fill="none" stroke-dasharray="8,4"/>
-                  <path d="M360 400 C420 400, 420 380, 440 400" stroke="#3465ff" stroke-width="3" fill="none" stroke-dasharray="8,4"/>
-
+                  <path d="M360 250 C420 250, 420 250, 440 300" stroke="url(#grad2)" stroke-width="3" fill="none" stroke-dasharray="8,4"/> <path d="M360 320 C420 320, 420 350, 440 350" stroke="url(#grad2)" stroke-width="3" fill="none" stroke-dasharray="8,4"/> <path d="M360 400 C420 400, 420 380, 440 400" stroke="url(#grad2)" stroke-width="3" fill="none" stroke-dasharray="8,4"/>
                   <!-- AI/Network Visualization -->
                   <circle cx="500" cy="300" r="150" fill="white" stroke="#e2e8f0" stroke-width="2"/>
-
                   <!-- Network Nodes -->
-                  <circle cx="500" cy="300" r="20" fill="url(#grad2)"/>
-                  <circle cx="580" cy="250" r="15" fill="url(#grad2)"/>
-                  <circle cx="420" cy="350" r="15" fill="url(#grad2)"/>
-                  <circle cx="550" cy="380" r="15" fill="url(#grad2)"/>
-                  <circle cx="450" cy="250" r="15" fill="url(#grad2)"/>
-                  <circle cx="600" cy="330" r="15" fill="url(#grad3)"/>
-                  <circle cx="470" cy="400" r="15" fill="url(#grad3)"/>
-                  <circle cx="410" cy="270" r="15" fill="url(#grad3)"/>
-
+                  <circle cx="500" cy="300" r="20" fill="url(#grad2)"/> <circle cx="580" cy="250" r="15" fill="url(#grad2)"/> <circle cx="420" cy="350" r="15" fill="url(#grad2)"/> <circle cx="550" cy="380" r="15" fill="url(#grad2)"/> <circle cx="450" cy="250" r="15" fill="url(#grad2)"/> <circle cx="600" cy="330" r="15" fill="url(#grad3)"/> <circle cx="470" cy="400" r="15" fill="url(#grad3)"/> <circle cx="410" cy="270" r="15" fill="url(#grad3)"/>
                   <!-- Network Connections -->
-                  <line x1="500" y1="300" x2="580" y2="250" stroke="#3465ff" stroke-width="2" stroke-opacity="0.6"/>
-                  <line x1="500" y1="300" x2="420" y2="350" stroke="#3465ff" stroke-width="2" stroke-opacity="0.6"/>
-                  <line x1="500" y1="300" x2="550" y2="380" stroke="#3465ff" stroke-width="2" stroke-opacity="0.6"/>
-                  <line x1="500" y1="300" x2="450" y2="250" stroke="#3465ff" stroke-width="2" stroke-opacity="0.6"/>
-                  <line x1="500" y1="300" x2="600" y2="330" stroke="#00e0c6" stroke-width="2" stroke-opacity="0.6"/>
-                  <line x1="500" y1="300" x2="470" y2="400" stroke="#00e0c6" stroke-width="2" stroke-opacity="0.6"/>
-                  <line x1="500" y1="300" x2="410" y2="270" stroke="#00e0c6" stroke-width="2" stroke-opacity="0.6"/>
-
-                  <line x1="580" y1="250" x2="600" y2="330" stroke="#cccccc" stroke-width="1.5" stroke-opacity="0.5"/>
-                  <line x1="420" y1="350" x2="470" y2="400" stroke="#cccccc" stroke-width="1.5" stroke-opacity="0.5"/>
-                  <line x1="450" y1="250" x2="410" y2="270" stroke="#cccccc" stroke-width="1.5" stroke-opacity="0.5"/>
-                  <line x1="550" y1="380" x2="470" y2="400" stroke="#cccccc" stroke-width="1.5" stroke-opacity="0.5"/>
-
+                  <line x1="500" y1="300" x2="580" y2="250" stroke="url(#grad2)" stroke-width="2" stroke-opacity="0.6"/> <line x1="500" y1="300" x2="420" y2="350" stroke="url(#grad2)" stroke-width="2" stroke-opacity="0.6"/> <line x1="500" y1="300" x2="550" y2="380" stroke="url(#grad2)" stroke-width="2" stroke-opacity="0.6"/> <line x1="500" y1="300" x2="450" y2="250" stroke="url(#grad2)" stroke-width="2" stroke-opacity="0.6"/> <line x1="500" y1="300" x2="600" y2="330" stroke="url(#grad3)" stroke-width="2" stroke-opacity="0.6"/> <line x1="500" y1="300" x2="470" y2="400" stroke="url(#grad3)" stroke-width="2" stroke-opacity="0.6"/> <line x1="500" y1="300" x2="410" y2="270" stroke="url(#grad3)" stroke-width="2" stroke-opacity="0.6"/>
+                  <line x1="580" y1="250" x2="600" y2="330" stroke="#cccccc" stroke-width="1.5" stroke-opacity="0.5"/> <line x1="420" y1="350" x2="470" y2="400" stroke="#cccccc" stroke-width="1.5" stroke-opacity="0.5"/> <line x1="450" y1="250" x2="410" y2="270" stroke="#cccccc" stroke-width="1.5" stroke-opacity="0.5"/> <line x1="550" y1="380" x2="470" y2="400" stroke="#cccccc" stroke-width="1.5" stroke-opacity="0.5"/>
                   <!-- Search/Conversation Elements -->
-                  <rect x="620" y="150" width="130" height="40" rx="20" fill="white" stroke="#e2e8f0" stroke-width="2"/>
-                  <text x="635" y="175" font-family="Arial, sans-serif" font-size="12" fill="#718096">Search query...</text>
-
-                  <rect x="600" y="210" width="150" height="30" rx="15" fill="#f7fafc" stroke="#e2e8f0" stroke-width="1"/>
-                  <text x="615" y="230" font-family="Arial, sans-serif" font-size="10" fill="#718096">Filter results</text>
-
-                  <rect x="600" y="250" width="150" height="30" rx="15" fill="#f7fafc" stroke="#e2e8f0" stroke-width="1"/>
-                  <text x="615" y="270" font-family="Arial, sans-serif" font-size="10" fill="#718096">Refine search</text>
-
+                  <rect x="620" y="150" width="130" height="40" rx="20" fill="white" stroke="#e2e8f0" stroke-width="2"/> <text x="635" y="175" font-family="Inter, Arial, sans-serif" font-size="12" fill="#718096">Search query...</text>
+                  <rect x="600" y="210" width="150" height="30" rx="15" fill="#f7fafc" stroke="#e2e8f0" stroke-width="1"/> <text x="615" y="230" font-family="Inter, Arial, sans-serif" font-size="10" fill="#718096">Filter results</text> <rect x="600" y="250" width="150" height="30" rx="15" fill="#f7fafc" stroke="#e2e8f0" stroke-width="1"/> <text x="615" y="270" font-family="Inter, Arial, sans-serif" font-size="10" fill="#718096">Refine search</text>
                   <!-- Result cards -->
-                  <rect x="600" y="300" width="150" height="50" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
-                  <circle cx="620" cy="325" r="10" fill="#e2e8f0"/>
-                  <rect x="640" y="315" width="90" height="8" rx="4" fill="#e2e8f0"/>
-                  <rect x="640" y="330" width="70" height="6" rx="3" fill="#e2e8f0"/>
-
-                  <rect x="600" y="360" width="150" height="50" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
-                  <circle cx="620" cy="385" r="10" fill="#e2e8f0"/>
-                  <rect x="640" y="375" width="90" height="8" rx="4" fill="#e2e8f0"/>
-                  <rect x="640" y="390" width="70" height="6" rx="3" fill="#e2e8f0"/>
-
-                  <rect x="600" y="420" width="150" height="50" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
-                  <circle cx="620" cy="445" r="10" fill="#e2e8f0"/>
-                  <rect x="640" y="435" width="90" height="8" rx="4" fill="#e2e8f0"/>
-                  <rect x="640" y="450" width="70" height="6" rx="3" fill="#e2e8f0"/>
-
-                  <!-- Animation elements -->
-                  <circle cx="400" cy="80" r="10" fill="url(#grad2)" opacity="0.6">
-                    <animate attributeName="cx" values="400;450;500;550;600;650;700" dur="3s" repeatCount="indefinite" />
-                    <animate attributeName="cy" values="80;100;90;100;90;100;80" dur="3s" repeatCount="indefinite" />
-                    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite" />
-                  </circle>
-
-                  <circle cx="130" cy="100" r="8" fill="url(#grad3)" opacity="0.6">
-                    <animate attributeName="cx" values="130;180;230;280;330;380" dur="4s" repeatCount="indefinite" />
-                    <animate attributeName="cy" values="100;120;110;120;110;100" dur="4s" repeatCount="indefinite" />
-                    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="4s" repeatCount="indefinite" />
-                  </circle>
-
-                  <circle cx="700" cy="500" r="12" fill="url(#grad2)" opacity="0.4">
-                    <animate attributeName="cx" values="700;650;600;550;500;450;400" dur="5s" repeatCount="indefinite" />
-                    <animate attributeName="cy" values="500;520;510;520;510;520;500" dur="5s" repeatCount="indefinite" />
-                    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite" />
-                  </circle>
+                  <rect x="600" y="300" width="150" height="50" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/> <circle cx="620" cy="325" r="10" fill="#e2e8f0"/> <rect x="640" y="315" width="90" height="8" rx="4" fill="#e2e8f0"/> <rect x="640" y="330" width="70" height="6" rx="3" fill="#e2e8f0"/>
+                  <rect x="600" y="360" width="150" height="50" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/> <circle cx="620" cy="385" r="10" fill="#e2e8f0"/> <rect x="640" y="375" width="90" height="8" rx="4" fill="#e2e8f0"/> <rect x="640" y="390" width="70" height="6" rx="3" fill="#e2e8f0"/>
+                  <rect x="600" y="420" width="150" height="50" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/> <circle cx="620" cy="445" r="10" fill="#e2e8f0"/> <rect x="640" y="435" width="90" height="8" rx="4" fill="#e2e8f0"/> <rect x="640" y="450" width="70" height="6" rx="3" fill="#e2e8f0"/>
+                  <!-- Animation elements (kept for dynamism) -->
+                  <circle cx="400" cy="80" r="10" fill="url(#grad2)" opacity="0.6"> <animate attributeName="cx" values="400;450;500;550;600;650;700" dur="3s" repeatCount="indefinite" /> <animate attributeName="cy" values="80;100;90;100;90;100;80" dur="3s" repeatCount="indefinite" /> <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite" /> </circle>
+                  <circle cx="130" cy="100" r="8" fill="url(#grad3)" opacity="0.6"> <animate attributeName="cx" values="130;180;230;280;330;380" dur="4s" repeatCount="indefinite" /> <animate attributeName="cy" values="100;120;110;120;110;100" dur="4s" repeatCount="indefinite" /> <animate attributeName="opacity" values="0.6;0.9;0.6" dur="4s" repeatCount="indefinite" /> </circle>
+                  <circle cx="700" cy="500" r="12" fill="url(#grad2)" opacity="0.4"> <animate attributeName="cx" values="700;650;600;550;500;450;400" dur="5s" repeatCount="indefinite" /> <animate attributeName="cy" values="500;520;510;520;510;520;500" dur="5s" repeatCount="indefinite" /> <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite" /> </circle>
                 </svg>
                 <!-- End SVG Hero Image -->
-                 <p class="visual-caption">Visualize: Your résumé (left) fuels an intelligent network (center) to deliver precise, conversational search results (right).</p>
             </div>
         </div>
     </section>
 
-    <!-- Problem / Solution -->
-    <section class="problem-solution bg-light">
-        <div class="container small-container">
-            <h2>Tired of LinkedIn's Guesswork?</h2>
-            <p>Endless scrolling, irrelevant results, and clunky keyword searches waste your time. Finding the right professional connection shouldn't be a chore.</p>
-            <h2 class="solution-heading">Nexus AI Search: Intelligence Meets Intuition.</h2>
-            <p>We're redefining professional discovery. Our Perplexity-like conversational AI understands your nuanced needs, delivering hyper-relevant connections with zero friction.</p>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="how-it-works">
-        <div class="container">
-            <h2>Get Started in Seconds</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                    <h3>1. Upload Résumé</h3>
-                    <p>Securely upload your CV. That's it. No forms, no manual data entry.</p>
+    <!-- Intro / How it Works Simplified -->
+    <section class="intro-apple bg-light-apple">
+        <div class="container-apple small-container-apple">
+            <h2 class="section-headline-apple">Effortless from the start.</h2>
+            <p class="section-subheadline-apple">Stop wrestling with complex filters and irrelevant results. Nexus AI understands your intent, delivering the right connections with remarkable ease.</p>
+            <div class="steps-apple">
+                <div class="step-apple">
+                    <span class="step-number-apple">1</span>
+                    <p>Upload your résumé.</p>
                 </div>
-                <div class="step">
-                    <div class="step-icon"><i class="fas fa-user-check"></i></div>
-                    <h3>2. Instant Profile</h3>
-                    <p>Our AI instantly extracts skills, experience, and education to build your rich, dynamic profile.</p>
+                <div class="step-apple">
+                    <span class="step-number-apple">2</span>
+                    <p>AI instantly creates your profile.</p>
                 </div>
-                <div class="step">
-                    <div class="step-icon"><i class="fas fa-comments"></i></div>
-                    <h3>3. Ask Anything</h3>
-                    <p>Use natural language. Refine conversationally. Find precisely who you need, faster than ever.</p>
+                <div class="step-apple">
+                    <span class="step-number-apple">3</span>
+                    <p>Search conversationally.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Core Features -->
-    <section class="features bg-light">
-        <div class="container">
-            <h2>Why Nexus AI Search Changes Everything</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
-                    <h3>Perplexity-Level Search</h3>
-                    <p>Ask complex, multi-faceted questions. Get context-aware, precise answers in milliseconds, not minutes.</p>
+    <!-- Core Features Section -->
+    <section class="features-apple bg-dark-apple">
+        <div class="container-apple">
+            <h2 class="section-headline-apple light-text">Intelligence that understands.</h2>
+            <p class="section-subheadline-apple light-text medium-width">Go beyond keywords. Discover connections based on deep semantic understanding and hidden patterns.</p>
+            <div class="feature-grid-apple">
+                <div class="feature-item-apple">
+                    <div class="feature-icon-apple"><i class="fas fa-comments"></i></div> <!-- Keep FontAwesome for now -->
+                    <h3>Conversational Search</h3>
+                    <p>Ask complex questions naturally. Refine results on the fly. Get answers in milliseconds.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                <div class="feature-item-apple">
+                    <div class="feature-icon-apple"><i class="fas fa-bolt"></i></div>
                     <h3>Zero-Friction Onboarding</h3>
-                    <p>Your résumé *is* your profile. Skip the tedious setup and get straight to valuable connections.</p>
+                    <p>Your résumé is all you need. Get started instantly, without tedious forms.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-search-plus"></i></div>
+                <div class="feature-item-apple">
+                    <div class="feature-icon-apple"><i class="fas fa-brain"></i></div>
                     <h3>Deep Semantic Understanding</h3>
-                    <p>We grasp industry jargon, nuanced roles, and career trajectories, going far beyond simple keyword matching.</p>
+                    <p>Grasps industry jargon, nuanced roles, and career trajectories for true relevance.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
-                    <h3>Insight-Driven Connections</h3>
-                    <p>Discover non-obvious but highly relevant profiles based on skill adjacencies and hidden patterns.</p>
+                <div class="feature-item-apple">
+                    <div class="feature-icon-apple"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Insightful Connections</h3>
+                    <p>Uncover non-obvious but valuable profiles based on skill adjacencies and patterns.</p>
                 </div>
-                 <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                 <div class="feature-item-apple">
+                    <div class="feature-icon-apple"><i class="fas fa-search-plus"></i></div>
+                    <h3>Unmatched Precision</h3>
+                    <p>Advanced AI and ranking ensure you see only the most relevant results, minimizing noise.</p>
+                </div>
+                 <div class="feature-item-apple">
+                    <div class="feature-icon-apple"><i class="fas fa-shield-alt"></i></div>
                     <h3>Engineered for Excellence</h3>
-                    <p>Built on rigorously tested, state-of-the-art AI with a commitment to flawless code, speed, and reliability.</p>
-                </div>
-                 <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
-                    <h3>Iterative Refinement</h3>
-                    <p>Effortlessly narrow or pivot your search through natural conversation. "Now, filter for those in NYC."</p>
+                    <p>Built on rigorously tested, state-of-the-art AI for speed, reliability, and accuracy.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technology Sneak Peek -->
-    <section class="technology">
-        <div class="container small-container">
-            <h2>Powered by Cutting-Edge AI</h2>
-            <p>We leverage state-of-the-art Transformer models, vector embeddings, and knowledge graphs – meticulously engineered – to deliver unparalleled accuracy, context, and speed. This isn't just search; it's understanding.</p>
-            <!-- Maybe add logos of underlying tech if appropriate later, e.g., Python, PyTorch -->
+    <!-- Technology Tease -->
+     <section class="tech-tease-apple bg-light-apple">
+        <div class="container-apple small-container-apple">
+             <h2 class="section-headline-apple">Powered by Advanced AI.</h2>
+             <p class="section-subheadline-apple">Leveraging cutting-edge Transformers, Vector Embeddings, and Knowledge Graphs, Nexus AI delivers a search experience unlike any other. Fast, precise, and intuitive.</p>
         </div>
     </section>
 
     <!-- Final CTA -->
-    <section id="waitlist" class="cta-final bg-dark">
-        <div class="container small-container">
-            <h2>Ready to Revolutionize Your Network?</h2>
-            <p>Be among the first to experience the future of professional discovery. Join the waitlist for exclusive early access to Nexus AI Search.</p>
-            <form id="waitlist-form" class="waitlist-form">
+    <section id="waitlist" class="cta-final-apple bg-white-apple">
+        <div class="container-apple small-container-apple">
+            <h2 class="section-headline-apple">Be the first to experience Nexus AI.</h2>
+            <p class="section-subheadline-apple">Join the waitlist for exclusive early access and help shape the future of professional networking.</p>
+            <form id="waitlist-form" class="waitlist-form-apple">
                 <input type="email" id="email-input" name="email" placeholder="Enter your email address" required>
-                <button type="submit" class="cta-button cta-button-primary">Join the Waitlist</button>
+                <button type="submit" class="cta-button-apple cta-button-primary-apple">Join Waitlist</button>
             </form>
-            <p id="form-message" class="form-message"></p>
+            <p id="form-message" class="form-message-apple"></p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2024 Nexus AI Search. All rights reserved.</p>
-            <nav class="footer-nav">
+    <footer class="footer-apple">
+        <div class="container-apple footer-container-apple">
+            <p>© 2024 Nexus AI. All rights reserved.</p>
+            <nav class="footer-nav-apple">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
-                <a href="#">Contact</a>
+                <!-- <a href="#">Contact</a> --> <!-- Keep it minimal -->
             </nav>
         </div>
     </footer>

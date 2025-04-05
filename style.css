@@ -6,343 +6,379 @@
 }
 
 :root {
-  --primary-color: #4F46E5; /* Indigo */
-  --secondary-color: #10B981; /* Emerald */
-  --dark-color: #111827; /* Gray 900 */
-  --light-color: #F9FAFB; /* Gray 50 */
-  --text-color: #374151; /* Gray 700 */
-  --text-light: #6B7280; /* Gray 500 */
-  --white-color: #FFFFFF;
-  --border-color: #E5E7EB; /* Gray 200 */
-  --font-family: 'Inter', sans-serif;
+  /* Apple-Inspired Palette */
+  --primary-color-apple: #4F46E5; /* Keep your primary accent */
+  --secondary-color-apple: #10B981; /* Keep your secondary accent */
+  --dark-color-apple: #1d1d1f; /* Near black */
+  --light-color-apple: #f5f5f7; /* Light gray */
+  --text-color-apple: #1d1d1f; /* Near black for text */
+  --text-light-apple: #6e6e73; /* Medium gray for subtitles */
+  --text-on-dark-apple: #f5f5f7; /* Light gray text on dark bg */
+  --text-on-dark-subtle-apple: #a1a1a6; /* Lighter gray on dark bg */
+  --white-color: #ffffff;
+  --border-color-apple: #d2d2d7; /* Subtle border color */
+  --font-family-apple: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Prioritize Inter, fallback to system */
 }
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px; /* Base font size */
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family-apple);
   line-height: 1.6;
-  color: var(--text-color);
+  color: var(--text-color-apple);
   background-color: var(--white-color);
+  -webkit-font-smoothing: antialiased; /* Smoother fonts on WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Smoother fonts on Firefox */
 }
 
+/* Headings & Text */
 h1, h2, h3 {
-  line-height: 1.3;
-  font-weight: 600;
+  line-height: 1.2; /* Tighter line height for headlines */
+  font-weight: 700; /* Bolder */
   margin-bottom: 1rem;
-  color: var(--dark-color);
+  color: var(--text-color-apple);
+  letter-spacing: -0.01em; /* Subtle tightening */
 }
 
-h1 { font-size: 2.8rem; font-weight: 700; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.4rem; }
+h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -0.02em; } /* Larger, bolder H1 */
+h2.section-headline-apple { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; }
+h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;}
 
 p {
-  margin-bottom: 1rem;
-  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  color: var(--text-light-apple);
+  font-size: 1.05rem; /* Slightly larger body text */
+  line-height: 1.7;
+}
+
+p.section-subheadline-apple {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-light-apple);
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--primary-color-apple);
   text-decoration: none;
+  transition: opacity 0.2s ease;
 }
-
-img {
-  max-width: 100%;
-  display: block;
+a:hover {
+  opacity: 0.8;
 }
 
 /* Utilities */
-.container {
-  max-width: 1100px;
+.container-apple {
+  max-width: 1080px; /* Slightly wider container */
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.small-container {
-  max-width: 800px;
+.small-container-apple {
+  max-width: 840px;
 }
 
-.bg-light {
-  background-color: var(--light-color);
+.medium-width { /* For text that shouldn't be too wide */
+   max-width: 750px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
-.bg-dark {
-  background-color: var(--dark-color);
-  color: var(--white-color);
-}
-.bg-dark h2, .bg-dark p {
-  color: var(--white-color);
-}
+.bg-light-apple { background-color: var(--light-color-apple); }
+.bg-dark-apple { background-color: var(--dark-color-apple); }
+.bg-white-apple { background-color: var(--white-color); }
+
+.light-text { color: var(--text-on-dark-apple) !important; } /* Override helper */
+.bg-dark-apple h2, .bg-dark-apple h3 { color: var(--text-on-dark-apple); }
+.bg-dark-apple p { color: var(--text-on-dark-subtle-apple); }
+.bg-dark-apple .section-subheadline-apple { color: var(--text-on-dark-subtle-apple); }
+
 
 section {
-  padding: 60px 0;
+  padding: 80px 0; /* More vertical padding */
 }
 
-/* Buttons */
-.cta-button {
+/* Buttons & Links */
+.cta-button-apple {
   display: inline-block;
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-weight: 500;
+  padding: 14px 32px; /* Larger padding */
+  border-radius: 30px; /* Pill shape */
+  font-weight: 600;
   font-size: 1rem;
   text-align: center;
   transition: background-color 0.3s ease, transform 0.2s ease;
   cursor: pointer;
   border: none;
+  letter-spacing: 0.01em;
 }
 
-.cta-button-primary {
-  background-color: var(--primary-color);
+.cta-button-primary-apple {
+  background-color: var(--primary-color-apple);
   color: var(--white-color);
 }
-.cta-button-primary:hover {
+.cta-button-primary-apple:hover {
   background-color: #4338CA; /* Darker Indigo */
-  transform: translateY(-2px);
+  transform: scale(1.03); /* Subtle scale */
 }
 
-.cta-button-secondary {
-  background-color: transparent;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-.cta-button-secondary:hover {
-  background-color: #EEF2FF; /* Light Indigo bg */
+.cta-link-apple {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--primary-color-apple);
 }
 
 /* Header */
-.header {
-  background-color: var(--white-color);
+.header-apple {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
   padding: 15px 0;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color-apple);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.header .container {
+.header-container-apple {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  font-size: 1.5rem;
+.logo-apple {
+  font-size: 1.4rem;
   font-weight: 700;
-  color: var(--dark-color);
+  color: var(--dark-color-apple);
 }
 
 /* Hero Section */
-.hero {
+.hero-apple {
   text-align: center;
-  padding: 80px 0 40px; /* More top padding */
+  padding: 100px 0 60px;
+  background-color: var(--white-color); /* Clean white hero */
 }
 
-.hero h1 {
-  margin-bottom: 1rem;
+.hero-headline-apple {
+  margin-bottom: 1.5rem;
 }
 
-.hero .subtitle {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  color: var(--text-light);
+.hero-subheadline-apple {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  color: var(--text-light-apple);
 }
 
-.hero-cta {
-  margin-bottom: 3rem;
+.hero-cta-apple {
+  margin-bottom: 4rem;
 }
 
-.hero-visual {
-  margin: 2rem auto 0;
-  max-width: 750px; /* Adjust as needed */
-  border-radius: 8px;
-  overflow: hidden; /* Clip if needed, though SVG might scale */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  background-color: #f8f9fa; /* Light background for the container */
-  padding: 1rem; /* Add some padding around the SVG */
+.hero-visual-apple {
+  margin: 0 auto;
+  max-width: 850px; /* Allow SVG to be larger */
+  padding: 0; /* Remove padding if SVG has its own */
+  box-shadow: none; /* Remove shadow for cleaner look */
+  background-color: transparent; /* Remove bg color */
 }
 
-/* --- NEW/UPDATED RULE for SVG --- */
-.hero-visual svg {
-  display: block; /* Removes potential extra space below */
-  width: 100%;    /* Makes SVG fill container width */
-  height: auto;   /* Maintains aspect ratio */
-  max-width: 100%; /* Ensures it doesn't overflow container */
+.hero-visual-apple svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
-/* --- END NEW/UPDATED RULE --- */
 
-.hero-visual .visual-caption {
+/* Intro / Steps Section */
+.intro-apple {
+  text-align: center;
+}
+.steps-apple {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.step-apple {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.step-number-apple {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-color-apple);
+  color: var(--white-color);
+  font-weight: 600;
   font-size: 0.9rem;
-  color: var(--text-light);
-  margin-top: 1rem; /* Increased margin top */
-  font-style: italic;
+}
+.step-apple p {
+  margin-bottom: 0; /* Remove margin from p in step */
+  font-weight: 500;
+  color: var(--text-color-apple);
 }
 
-
-/* Problem / Solution Section */
-.problem-solution {
-  text-align: center;
-}
-.solution-heading {
-  margin-top: 2rem;
-  color: var(--primary-color);
-}
-
-/* How It Works Section */
-.how-it-works {
-  text-align: center;
-}
-.how-it-works h2 {
-  margin-bottom: 3rem;
-}
-.steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  text-align: center;
-}
-.step-icon {
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-.step h3 {
-  margin-bottom: 0.5rem;
-}
 
 /* Features Section */
-.features h2 {
-  text-align: center;
-  margin-bottom: 3rem;
+.features-apple {
+  padding-bottom: 100px; /* Extra padding below features */
 }
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-.feature-item {
-  background-color: var(--white-color);
-  padding: 2rem;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-  text-align: left;
-}
-.feature-icon {
-  font-size: 2rem;
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-  display: inline-block; /* Or flex align */
-}
-.feature-item h3 {
-  margin-bottom: 0.5rem;
+.features-apple .section-headline-apple,
+.features-apple .section-subheadline-apple {
+  margin-bottom: 4rem; /* More space after headline */
 }
 
-/* Technology Section */
-.technology {
+.feature-grid-apple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 2.5rem; /* Increased gap */
+}
+.feature-item-apple {
+  background-color: transparent; /* No background */
+  padding: 0; /* Remove padding */
+  border: none; /* Remove border */
+  text-align: center; /* Center align feature text */
+}
+.feature-icon-apple {
+  font-size: 2.5rem; /* Larger icons */
+  color: var(--primary-color-apple); /* Use accent color */
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+.feature-item-apple h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+}
+.feature-item-apple p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Tech Tease Section */
+.tech-tease-apple {
   text-align: center;
 }
 
 /* Final CTA Section */
-.cta-final {
+.cta-final-apple {
   text-align: center;
+  border-top: 1px solid var(--border-color-apple); /* Subtle separator */
 }
-.waitlist-form {
-  margin-top: 2rem;
+.waitlist-form-apple {
+  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  flex-wrap: wrap; /* Allow wrapping on small screens */
+  flex-wrap: wrap;
 }
-.waitlist-form input[type="email"] {
-  padding: 12px 15px;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
+.waitlist-form-apple input[type="email"] {
+  padding: 14px 20px; /* Match button vertical padding */
+  border: 1px solid var(--border-color-apple);
+  border-radius: 30px; /* Pill shape */
   font-size: 1rem;
-  min-width: 300px; /* Adjust as needed */
-  flex-grow: 1; /* Allow input to grow */
+  min-width: 320px;
+  flex-grow: 1;
+  background-color: var(--light-color-apple); /* Light input background */
+  text-align: center;
 }
-.waitlist-form button {
-  flex-shrink: 0; /* Prevent button from shrinking */
+.waitlist-form-apple input[type="email"]::placeholder {
+  color: var(--text-light-apple);
+  opacity: 0.8;
 }
-.form-message {
-  margin-top: 1rem;
+.waitlist-form-apple button {
+  flex-shrink: 0;
+}
+.form-message-apple {
+  margin-top: 1.5rem;
   font-size: 0.9rem;
-  min-height: 1.2em; /* Reserve space for message */
+  min-height: 1.2em;
+  color: var(--text-light-apple);
 }
-.form-message.success {
-  color: var(--secondary-color);
-}
-.form-message.error {
-  color: #EF4444; /* Red */
-}
+.form-message-apple.success { color: var(--secondary-color-apple); }
+.form-message-apple.error { color: #f43f5e; /* Rose 500 */}
 
 
 /* Footer */
-.footer {
-  background-color: var(--light-color);
-  color: var(--text-light);
-  padding: 20px 0;
+.footer-apple {
+  background-color: var(--white-color);
+  color: var(--text-light-apple);
+  padding: 30px 0;
   text-align: center;
-  font-size: 0.9rem;
-  border-top: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border-color-apple);
 }
-.footer .container {
+.footer-container-apple {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Wrap on small screens */
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
-.footer-nav a {
-  color: var(--text-light);
-  margin-left: 15px;
+.footer-nav-apple a {
+  color: var(--text-light-apple);
+  margin-left: 20px;
   transition: color 0.3s ease;
 }
-.footer-nav a:hover {
-  color: var(--primary-color);
+.footer-nav-apple a:hover {
+  color: var(--primary-color-apple);
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  h1 { font-size: 2.2rem; }
-  h2 { font-size: 1.8rem; }
+@media (max-width: 992px) {
+  h1 { font-size: 3rem; }
+  h2.section-headline-apple { font-size: 2.2rem; }
+  .feature-grid-apple {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+      gap: 2rem;
+  }
+}
 
-  .header .container {
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2.section-headline-apple { font-size: 1.9rem; }
+  p.section-subheadline-apple { font-size: 1.1rem; margin-bottom: 2rem;}
+  section { padding: 60px 0; }
+
+  .header-container-apple { flex-direction: column; gap: 10px; }
+  .logo-apple { margin-bottom: 5px; }
+
+  .hero-apple { padding: 80px 0 40px; }
+  .hero-subheadline-apple { font-size: 1.15rem; }
+
+  .steps-apple { flex-direction: column; align-items: center; gap: 1.5rem; }
+  .step-apple { flex-direction: column; text-align: center; gap: 0.5rem; }
+
+  .feature-grid-apple {
+      grid-template-columns: 1fr; /* Stack features */
+      gap: 2.5rem;
+  }
+  .feature-item-apple { padding: 0 10%; } /* Add horizontal padding when stacked */
+
+  .waitlist-form-apple {
+      flex-direction: column;
+      align-items: stretch;
+  }
+  .waitlist-form-apple input[type="email"] {
+      min-width: unset;
+      width: 100%;
+      text-align: left; /* Align left when stacked */
+  }
+
+  .footer-container-apple {
       flex-direction: column;
       gap: 10px;
   }
-  .header .cta-button-secondary {
-      margin-top: 10px;
-  }
-
-  .hero { padding: 60px 0 30px; }
-  .hero .subtitle { font-size: 1rem; }
-
-  .steps, .feature-grid {
-      grid-template-columns: 1fr; /* Stack elements */
-  }
-
-  .waitlist-form {
-      flex-direction: column;
-      align-items: stretch; /* Make input/button full width */
-  }
-  .waitlist-form input[type="email"] {
-      min-width: unset;
-      width: 100%;
-  }
-
-  .footer .container {
-      flex-direction: column;
-      gap: 15px;
-  }
-  .footer-nav {
-      margin-top: 10px;
-  }
-  .footer-nav a {
-      margin: 0 8px;
-  }
+  .footer-nav-apple { margin-top: 10px; }
+  .footer-nav-apple a { margin: 0 10px; }
 }
